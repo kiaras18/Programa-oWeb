@@ -12,6 +12,11 @@
     div{
         background-color: rgb(255, 186, 221);
     }
+    table, td{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    
          
     </style>
 </head>
@@ -69,35 +74,42 @@
         
             <section i="tabelas">
             <p>
-                O HTML fornece suporte a tabelas por meio da tag table, e outras tags, como tag definição de linha &lt tr &gt <i>table row</i>, criação de celular com tag &lt td &gt <i>table data</i>
+                O HTML fornece suporte a tabelas por meio da tag table, e outras tags, como tag definição de linha &lt tr &gt 
+                <i>table row</i>, criação de celular com tag &lt td &gt <i>table data</i>
             </p>
 
             <table>
-                <caption>Churrasco finaleira</caption>
-                <tr>
-                    <td>indice</td><td>nome</td><td>valor</td>
-                </tr>
-                <tr>
-                    <td>1</td><td>carne</td><td>50,00</td>
-                </tr>
-                <tr>
-                    <td>2</td><td>linguiça</td><td>50,00</td>
-                </tr>
-                <tr>
-                    <td>3</td><td>carvão</td><td>30,00</td>
-                </tr>
-                <tr>
-                    <td>4</td><td>Água com gás</td><td>30,00</td>
-                </tr>
-                <tr>
-                    <td>5</td><td>Refrigerante</td><td>60,00</td>
-                </tr>
-            </table>
-        </section>
-    </div>
-    
+                    <caption>Churrasco finaleira</caption>
+                    <tr>
+                        <td>indice</td><td>categoria</td><td>nome</td><td>valor</td>
+                    </tr>
+                    <tr>
+                        <td>1</td><td>carnes</td><td>carne</td><td>50,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td><td>carnes</td><td>linguiça</td><td>50,00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td><td>outros</td><td>carvão</td><td>30,00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td><td>bebidas</td><td>Água com gás</td><td>30,00</td>
+                    </tr>
+                    <tr>
+                        <td>5</td><td>bebidas</td><td>Refrigerante</td><td>60,00</td>
+                    <tr>
+                    <tr>
+                        <td>6</td><td>outros</td><td>Pão de alho</td><td>40,00</td>
+                    <tr>
+                        <tr>
+                            <td colspan="2" rowspan="1">Total</td>
+                            
+                            <td colspan="2">260,00</td>
+                        </tr>
 
-
-</body> 
-
-</html>
+                    </tr>
+                    </table>
+                </section>
+            </div>
+        </body>
+    </html>
