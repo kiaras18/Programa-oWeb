@@ -1,0 +1,25 @@
+diferentes positions
+
+display- flex box
+display inline-block
+
+
+jogo-flexfrog
+
+
+ <!--div.box#box${box$}6  da enter e da nisso *seta pra baixo-->
+
+
+   /* DEIXA TODOSOS ELEMNTOS DA PAGINA COM A COR SEECIONADA*/
+           /* SELETOR UNIVERSAL MUITO GENERICO*/
+           /* SELETOR POR EELEMNTO MAIS GENERICA*/
+           /* SELETOR POR ID*/
+           /* SELETOR POR CLASSE, (.NOMEDACLASSE) VEM DE CLASSE CLASIICAÇÃO */
+            /* SELETOR POR CLASSE, (.NOMEDACLASSE) VEM DE CLASSE CLASIICAÇÃO */
+
+
+            https://css-tricks.com/complete-guide-css-grid-layout/ - guia de layouts
+
+            https://css-tricks.com/wp-content/uploads/2022/02/css-grid-poster.png
+
+            https://cssgridgarden.com/
