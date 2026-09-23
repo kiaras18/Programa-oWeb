@@ -23,3 +23,24 @@ jogo-flexfrog
             https://css-tricks.com/wp-content/uploads/2022/02/css-grid-poster.png
 
             https://cssgridgarden.com/
+
+---------------------------------------------------------------------------------------------------------
+           -media screen (tela grid)
+           ex: 
+.box{
+    border: 1px solid black;
+}
+@media screen and (max-width: 400px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
+    
+
+@media screen and (min-width:401px){
+    .container {
+        grid-template-columns:1fr 1fr;
+    }
+} --------------------------------------------------------------------------------------------------------------------
+
+GitHub Pages
