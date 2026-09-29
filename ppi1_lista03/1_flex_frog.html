@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 - Flexbox Froggy</title>
+</head>
+
+<body>
+
+    <h1>Flexbox Froggy</h1>
+    <a href="https://flexboxfroggy.com/"> </a>
+
+    <h2>Nível 13</h2>
+
+    <h3>Código utilizado:</h3>
+
+    <pre>
+#pond {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+}
+    </pre>
+
+    <h3>Explicação:</h3>
+
+    <p>
+        A propriedade <strong>display: flex</strong> ativa o Flexbox
+        no elemento #pond, permitindo organizar os elementos de
+        acordo com as regras do Flexbox.
+    </p>
+
+    <p>
+        A propriedade <strong>flex-direction: row-reverse</strong>
+        organiza os elementos em uma linha, mas inverte a direção
+        da ordem dos elementos.
+    </p>
+
+    <p>
+        A propriedade <strong>justify-content: center</strong>
+        centraliza os elementos no eixo principal.
+    </p>
+
+    <p>
+        A propriedade <strong>align-items: flex-end</strong>
+        posiciona os elementos no final do eixo transversal.
+    </p>
+
+
+    <h2>Nível 14</h2>
+
+    <h3>Código utilizado:</h3>
+
+    <pre>
+#pond {
+    display: flex;
+}
+
+.yellow {
+    order: 1;
+}
+    </pre>
+
+    <h3>Explicação:</h3>
+
+    <p>
+        A propriedade <strong>display: flex</strong> transforma
+        o elemento #pond em um container Flexbox.
+    </p>
+
+    <p>
+        A propriedade <strong>order</strong> permite alterar a
+        ordem visual dos elementos dentro de um container Flexbox.
+    </p>
+
+    <p>
+        Por padrão, os elementos possuem o valor
+        <strong>order: 0</strong>. Ao utilizar
+        <strong>order: 1</strong> no elemento .yellow,
+        o sapo amarelo é colocado depois dos elementos que
+        permanecem com o valor padrão.
+    </p>
+
+
+    <h2>Referência</h2>
+
+    <p>
+        MDN Web Docs. Flexible Box Layout.
+    </p>
+
+    <p>
+        https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Flexible_box_layout
+    </p>
+
+</body>
+
+</html>
