@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    h1{
+        color:palevioletred
+
+    }
+    label{
+        color: rgb(255, 100, 126)
+    }
+    
+    
+</style>
+
+<body>
+
+    <h1>FORMULÁRIO DE CONTATO</h1>
+
+    <p>
+        Preencha os campos abaixo para entrar em contato.
+    </p>
+
+    <form>
+
+        <p>
+            <label for="nome">Nome:</label><br>
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                required>
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label><br>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required>
+        </p>
+
+        <p>
+            <label for="assunto">Assunto:</label><br>
+            <input
+                type="text"
+                id="assunto"
+                name="assunto"
+                placeholder="Digite o assunto"
+                required>
+        </p>
+
+        <p>
+            <label for="estado">Estado:</label><br>
+
+            <select id="estado" name="estado" required>
+                <option value="">Selecione seu estado</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="6"
+                cols="40"
+                placeholder="Digite sua mensagem"
+                required></textarea>
+        </p>
+
+        <p>
+            <button type="submit">ENVIAR</button>
+        </p>
+
+    </form>
+
+    <p>
+        <a href="4_curriculo.html"> VOLTAR PARA O CURRÍCULO</a>
+    </p>
+
+    <hr>
+
+
+    
+
+</body>
+
+</html>
