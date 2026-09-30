@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Garden - Nível 18</title>
+
+    <link rel="stylesheet" href="style_1.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Grid Garden</h1>
+
+      <button><a href="https://cssgridgarden.com/" target="_blank">Jogar</a></button>
+        <p>Nível 18</p>
+
+        <img src="../imagens/garden1.png" alt="Material Visual">
+
+         <h2>Este nivel pedia que alterace a ordem onde  o veneno esticesse nas ervas daninhas e as cenouras sejam regadas.</h2>
+         <img src="../imagens/codigo.png" alt="Material Visual">
+    </header>
+
+    <main>
+
+        <section>
+            <h2>O que foi aprendido     ?</h2>
+
+            <p>
+                No nível 18 do Grid Garden, foi utilizada a propriedade
+                <strong>order</strong> do CSS Grid.
+            </p>
+
+            <p>
+                Essa propriedade permite alterar a ordem em que os elementos
+                aparecem dentro do Grid.
+            </p>
+        </section>
+
+        <section>
+            <h2>Solução do nível</h2>
+
+            <pre><code>#poison {
+    order: 1;
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Explicação</h2>
+
+            <p>
+                Por padrão, os elementos possuem o valor
+                <strong>order: 0</strong>.
+            </p>
+
+            <p>
+                Ao colocar <strong>order: 1</strong> no elemento
+                <strong>#poison</strong>, ele passa a ser organizado
+                depois dos elementos que possuem o valor padrão.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Exercício 1 - CSS Grid Garden</p>
+    </footer>
+
+</body>
+
+</html>
