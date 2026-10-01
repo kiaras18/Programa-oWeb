@@ -1,0 +1,48 @@
+  body {
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            min-height: 100vh;
+            margin: 0;
+            background-color: darkgray;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            width: 600px;
+            height: 600px;
+            padding: 20px;
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: #eee;
+        }
+
+        .perfil {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #979696;
+        }
+
+        .nome,
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        .loc{
+color:#979696
+        }

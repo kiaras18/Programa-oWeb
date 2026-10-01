@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.pagina {
+    width: 100%;
+
+}
+
+header {
+    height: 65px;
+    background-color: #91d400;
+    padding: 12px;
+}
+
+main {
+    display: flex;
+    height: 260px;
+}
+
+article {
+    flex: 3;
+    padding: 12px;
+    background-color: white;
+}
+
+aside {
+    flex: 1;
+    padding: 12px;
+    background-color: #f5f2d8;
+}
+
+nav {
+    flex: 1;
+    padding: 12px;
+    background-color: #d5e8d2;
+}
+
+footer {
+    height: 65px;
+    background-color: #91d400;
+    padding: 12px;
+}
