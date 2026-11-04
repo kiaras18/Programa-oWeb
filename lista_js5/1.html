@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title id="titulo-aba">O que é JavaScript?</title>
+</head>
+<body id="corpo">
+
+    <h1 id="titulo-principal">O que é JavaScript?</h1>
+
+    <h2> Quem criou?
+    </h2>
+
+    <p> O criador do JavaScript é o programador e tecnólogo americano Brendan Eich</p>
+
+    <img src="../imagens/java.jpg">
+
+    <p id="explicacao">
+    
+        JavaScript foi criado para tornar as páginas web interativas,
+        permitindo responder às ações dos usuários, validar formulários
+        e atualizar conteúdos sem precisar recarregar a página inteira.
+
+        No navegador, o JavaScript pode manipular elementos HTML e responder
+        às interações do usuário. No servidor, por exemplo com Node.js,
+        pode executar operações como acessar bancos de dados e processar
+        requisições.
+
+        O sandbox é um mecanismo de segurança que limita o acesso do código
+        executado no navegador a recursos do computador e do sistema,
+        ajudando a proteger o usuário.
+
+        O document permite acessar e modificar o documento HTML;
+        o console permite registrar mensagens para depuração;
+        e o alert exibe uma caixa de diálogo com uma mensagem.
+    </p>
+
+    <p id="hora-atual"></p>
+
+    <script id="script-principal">
+
+        console.log("A página foi carregada com sucesso! Ebaaa  ");
+
+        alert("Olá! Seja bem-vindo à página sobre JavaScript! EBAAAAAAAA");
+
+        const agora = new Date();
+
+        document.getElementById("hora-atual").innerHTML =
+            "A hora atual é: " + agora.toLocaleTimeString("pt-BR");
+
+    </script>
+
+</body>
+</html>
