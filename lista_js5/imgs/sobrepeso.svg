@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="180" viewBox="0 0 300 180">
-<rect width="300" height="180" rx="18" fill="#d49b37"/>
-<circle cx="150" cy="62" r="28" fill="white" opacity="0.9"/>
-<path d="M95 155c4-38 24-58 55-58s51 20 55 58" fill="white" opacity="0.9"/>
-<text x="150" y="174" text-anchor="middle" font-family="Arial" font-size="15" fill="white">Sobrepeso</text>
-</svg>
