@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração de Cores com a Tecla Espaço</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 40px; }
+        .box { width: 120px; height: 120px; background-color: gray; border: 1px solid black; }
+    </style>
+</head>
+<body>
+    <h1>Alteração de Cores com a Tecla Espaço</h1>
+    <p>Pressione a tecla de espaço para mudar as cores dos quadrados.</p>
+
+    <div class="container">
+        <div class="box" id="b1"></div>
+        <div class="box" id="b2"></div>
+        <div class="box" id="b3"></div>
+        <div class="box" id="b4"></div>
+        <div class="box" id="b5"></div>
+    </div>
+
+    <script>
+        document.addEventListener("keydown", function(evento) {
+            if (evento.code === "Space") {
+                evento.preventDefault();
+
+                for (let i = 1; i <= 5; i++) {
+                    let vermelho = Math.floor(Math.random() * 256);
+                    let verde = Math.floor(Math.random() * 256);
+                    let azul = Math.floor(Math.random() * 256);
+
+                    document.getElementById("b" + i).style.backgroundColor =
+                        "rgb(" + vermelho + ", " + verde + ", " + azul + ")";
+                }
+            }
+        });
+    </script>
+</body>
+</html>

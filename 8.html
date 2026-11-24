@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudança de Cor de Fundo</title>
+</head>
+<body>
+    <h1>Mudança de Cor de Fundo</h1>
+    <button type="button" id="btnSortear">Mudar cor</button>
+    <p id="result">Cor atual: nenhuma</p>
+    <button type="button" id="btnCopiar">Copiar cor</button>
+
+    <script>
+        let corAtual = "";
+
+        document.getElementById("btnSortear").addEventListener("click", function() {
+            let vermelho = Math.floor(Math.random() * 256);
+            let verde = Math.floor(Math.random() * 256);
+            let azul = Math.floor(Math.random() * 256);
+
+            corAtual = "rgb(" + vermelho + ", " + verde + ", " + azul + ")";
+            document.body.style.backgroundColor = corAtual;
+            document.getElementById("result").innerText = "Cor atual: " + corAtual;
+        });
+
+        document.getElementById("btnCopiar").addEventListener("click", function() {
+            if (corAtual === "") {
+                alert("Primeiro escolha uma cor.");
+                return;
+            }
+
+            navigator.clipboard.writeText(corAtual)
+                .then(function() {
+                    alert("Cor copiada!");
+                })
+                .catch(function() {
+                    alert("Não foi possível copiar a cor neste navegador.");
+                });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Variáveis e Operadores</title>
+</head>
+<body>
+    <h1>Tipos de Variáveis e Operadores</h1>
+    <button type="button" onclick="executarAnalise()">Executar análise</button>
+
+    <h2>Tipos das variáveis</h2>
+    <p id="pstring"></p>
+    <p id="pnumero"></p>
+    <p id="pboolean"></p>
+    <p id="pundefined"></p>
+    <p id="pnulo"></p>
+    <p id="pobjeto"></p>
+    <p id="parray"></p>
+
+    <h2>Operações entre tipos</h2>
+    <p id="operacoes"></p>
+
+    <script>
+        function executarAnalise() {
+            const vString = "Olá, Mundo!";
+            const vNumber = 42;
+            const vBoolean = true;
+            let vUndefined;
+            const vNull = null;
+            const vObjeto = { nome: "JavaScript", ano: 1995 };
+            const vArray = [10, 20, 30];
+
+            document.getElementById("pstring").innerText =
+                "String: " + typeof vString;
+            document.getElementById("pnumero").innerText =
+                "Number: " + typeof vNumber;
+            document.getElementById("pboolean").innerText =
+                "Boolean: " + typeof vBoolean;
+            document.getElementById("pundefined").innerText =
+                "Undefined: " + typeof vUndefined;
+            document.getElementById("pnulo").innerText =
+                "Null: " + typeof vNull;
+            document.getElementById("pobjeto").innerText =
+                "Object: " + typeof vObjeto;
+            document.getElementById("parray").innerText =
+                "Array: " + typeof vArray + " (Array.isArray: " + Array.isArray(vArray) + ")";
+
+            let soma = vString + vNumber;
+            let multiplicacao = vBoolean * vNumber;
+            let somaNull = vNull + vNumber;
+            let somaUndefined = vUndefined + vNumber;
+
+            console.log("String + Number:", soma);
+            console.log("Boolean * Number:", multiplicacao);
+            console.log("Null + Number:", somaNull);
+            console.log("Undefined + Number:", somaUndefined);
+
+            document.getElementById("operacoes").innerText =
+                "String + Number = " + soma +
+                " (o número foi convertido em texto)." +
+                "\nBoolean * Number = " + multiplicacao +
+                " (true vale 1 em uma operação numérica)." +
+                "\nNull + Number = " + somaNull +
+                " (null vale 0 em uma operação numérica)." +
+                "\nUndefined + Number = " + somaUndefined +
+                " (o resultado é NaN porque undefined não vira um número válido).";
+        }
+    </script>
+</body>
+</html>
