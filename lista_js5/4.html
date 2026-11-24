@@ -26,7 +26,7 @@
 
     <p id="resultadoIMC"></p>
     <p id="classificacao"></p>
-    <img id="imgPerfil" src="imgs/perfil.svg" alt="Imagem da classificação do IMC">
+    <img id="imgPerfil" src="img_imc/perfil.jpg" alt="Imagem da classificação do IMC">
 
     <script>
         let botao = document.getElementById("botao");
@@ -42,7 +42,7 @@
             if (nome === "" || pesoTexto === "" || alturaTexto === "") {
                 resultado.innerText = "Preencha todos os campos.";
                 classificacao.innerText = "";
-                imagem.src = "imgs/perfil.svg";
+                imagem.src = "img_imc/perfil.jpg";
                 return;
             }
 
@@ -52,7 +52,7 @@
             if (peso <= 0 || altura <= 0 || isNaN(peso) || isNaN(altura)) {
                 resultado.innerText = "Digite valores válidos para peso e altura.";
                 classificacao.innerText = "";
-                imagem.src = "imgs/perfil.svg";
+                imagem.src = "img/perfil.jpg";
                 return;
             }
 
@@ -96,9 +96,9 @@
                 case 17:
                 case 18:
                     if (imc < 18.5) {
-                        imagem.src = "imgs/abaixo-peso.svg";
+                        imagem.src = "img_imc/abaixopeso.png";
                     } else {
-                        imagem.src = "imgs/normal.svg";
+                        imagem.src = "img_imc/normal.png";
                     }
                     break;
                 case 19:
@@ -107,31 +107,31 @@
                 case 22:
                 case 23:
                 case 24:
-                    imagem.src = "imgs/normal.svg";
+                    imagem.src = "img_imc/normal.png";
                     break;
                 case 25:
                 case 26:
                 case 27:
                 case 28:
                 case 29:
-                    imagem.src = "imgs/sobrepeso.svg";
+                    imagem.src = "img_imc/sobrepeso.png";
                     break;
                 case 30:
                 case 31:
                 case 32:
                 case 33:
                 case 34:
-                    imagem.src = "imgs/obesidade1.svg";
+                    imagem.src = "img_imc/obesidade1.png";
                     break;
                 case 35:
                 case 36:
                 case 37:
                 case 38:
                 case 39:
-                    imagem.src = "imgs/obesidade2.svg";
+                    imagem.src = "img_imc/obesidade2.png";
                     break;
                 default:
-                    imagem.src = "imgs/obesidade3.svg";
+                    imagem.src = "img_imc/obesidade3.png";
                     break;
             }
         });
